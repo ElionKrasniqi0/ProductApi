@@ -20,7 +20,6 @@ namespace ProductApi.Services
         {
             var productsQuery = _context.Products.AsQueryable();
 
-            // Apply filters
             if (!string.IsNullOrEmpty(query.Category))
             {
                 productsQuery = productsQuery.Where(p => p.Category.ToLower() == query.Category.ToLower());
@@ -35,8 +34,6 @@ namespace ProductApi.Services
             {
                 productsQuery = productsQuery.Where(p => p.Price <= query.MaxPrice.Value);
             }
-
-            // Apply sorting
             productsQuery = query.SortBy?.ToLower() switch
             {
                 "name" => query.SortDescending ? productsQuery.OrderByDescending(p => p.Name) : productsQuery.OrderBy(p => p.Name),
@@ -47,10 +44,8 @@ namespace ProductApi.Services
                 _ => query.SortDescending ? productsQuery.OrderByDescending(p => p.Name) : productsQuery.OrderBy(p => p.Name)
             };
 
-            // Get total count before pagination
             var totalCount = await productsQuery.CountAsync();
 
-            // Apply pagination
             var products = await productsQuery
                 .Skip((query.PageNumber - 1) * query.PageSize)
                 .Take(query.PageSize)

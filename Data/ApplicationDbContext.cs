@@ -13,7 +13,6 @@ namespace ProductApi.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Seed initial data
             modelBuilder.Entity<Product>().HasData(
                 new Product { Id = 1, Name = "Laptop", Category = "Electronics", Price = 999.99m, StockQuantity = 10, CreatedAt = DateTime.UtcNow },
                 new Product { Id = 2, Name = "Book", Category = "Education", Price = 29.99m, StockQuantity = 100, CreatedAt = DateTime.UtcNow },
