@@ -24,7 +24,7 @@ A complete Product Api for managing products with JWT authentication, built usin
 
 ## Using the Command Line
 
-1. Clone or Download the Project
+##1. Clone or Download the Project
 If you don't have git installed. You need to install it first.
 After installing it, you need to right-click to open git bash. Then you need to type
 (git clone https://github.com/ElionKrasniqi0/ProductApi)
@@ -38,7 +38,7 @@ Right-click on the ProductApi project
 
 Select "Set as Startup Project"
 ###################################################################################################################
-2. Run the application
+##2. Run the application
 
 Press F5 or Ctrl + F5 to run
 Accessing the Application
@@ -60,7 +60,7 @@ ID	Name	Category	Price	Stock
 5	Chair	Furniture	$149.99	8
 ###################################################################################################################
 
-3. When the application opens, an Authorization button appears. You need to press it and type: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTc2NDQ2ODg5MywiaXNzIjoiUHJvZHVjdEFwaSIsImF1ZCI6IlByb2R1Y3RBcGlVc2VycyJ9.PEchBrfofBGEh3MU3gVqBEz2H663VzueCH1fmB_UHA4. There is no time to enter the Token. Below you can see: 
+##3. When the application opens, an Authorization button appears. You need to press it and type: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTc2NDQ2ODg5MywiaXNzIjoiUHJvZHVjdEFwaSIsImF1ZCI6IlByb2R1Y3RBcGlVc2VycyJ9.PEchBrfofBGEh3MU3gVqBEz2H663VzueCH1fmB_UHA4. There is no time to enter the Token. Below you can see: 
 ###################################################################################################################
 
 ##Auth:POST/api/Auth/login
